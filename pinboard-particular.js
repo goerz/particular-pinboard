@@ -8,7 +8,7 @@ var readlater = false;
 var appUrl = null;
 // when set to true selected text is quoted using markdown quote syntax
 var quoteSelectionAsMarkdown = true;
-// when this text appears in title or description they are added as tags
+// when this text appears in url, title or description they are added as tags
 var tagKeywords = {
   javascript:'javascript',
   js:'javascript',
@@ -202,7 +202,7 @@ var args = [
   '&title=', encodeURIComponent(title),
   '&description=', encodeURIComponent(description),
   // this could based on a general function "getText()"
-  '&tags=', encodeURIComponent(getTags(document.title+" "+description+" "+getMetaDescription()).join(" "))
+  '&tags=', encodeURIComponent(getTags(location.href+" "+document.title+" "+description+" "+getMetaDescription()).join(" "))
 ];
 
 // If readlater mode, add the auto-close parameter and read-later flag:

@@ -13,12 +13,16 @@ var tagKeywords = {
   javascript:'javascript',
   js:'javascript',
   python:'python',
+  vim:'vim',
   ios:'ios',
   youtube:'video',
   vimeo:'video',
   video:'video',
   books:'book',
-  book:'book'
+  book:'book',
+  arxiv:'paper',
+  aps:'paper',
+  nytimes:'nyt'
 };
 
 // this matches domain names to special selectors for the title
